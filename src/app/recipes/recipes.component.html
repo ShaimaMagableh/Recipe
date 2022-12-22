@@ -1,0 +1,15 @@
+<h1>recipes works</h1>
+
+<ul >
+        <li *ngFor="let recipe of recipes">
+           <p> {{recipe.name}}</p>
+           <p> {{recipe.descrption}} </p>
+           <img src="{{recipe.imageUrl}}" width="190px" >
+
+        </li>
+       
+</ul>
+
+<div class="c1">
+        <app-recipe-form (event)="sendRecipe(event)" *ngFor="let recipe of recipes"></app-recipe-form>
+</div>

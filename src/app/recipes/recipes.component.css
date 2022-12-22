@@ -1,0 +1,16 @@
+ul{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+}
+li{
+    text-decoration: none;
+    margin: 90px;
+}
+h1{
+    margin-left: 550px;
+    margin-top: 50px;
+}

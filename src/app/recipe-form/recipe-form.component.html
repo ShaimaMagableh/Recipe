@@ -1,0 +1,21 @@
+<p>recipe-form works!</p>
+<form class="container">
+    <label for="newRecipe" >Add new recipe :</label>
+    <input name="newRecipe" type="text" #newRecipe (input)="onNewRecipeInput(newRecipe.value)">
+
+    <label for="description" #des>Your recipe description :</label>
+    <input type="text" name="description" #newDescription (input)="onNewDescription(newDescription.value)">
+
+    <label for="image" #pic>Uploud your image</label>
+    <input type="url" name="image">
+    <br>
+    
+    <button type="submit" (click)="sendRecipe(this.Recipe)">Submit</button>
+    <ul>
+        <li *ngFor="let recipe of recipes">
+                <P>{{newRecipe}}</P>
+                <P>{{newDescription}}</P>
+                <P>{{pic}}</P>
+        </li>
+      </ul>
+</form>
